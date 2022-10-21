@@ -1,0 +1,3 @@
+C:/Users/MSI/Desktop/Facultate An 3/Semestru 1/PPD/Lab 2/cmake-build-debug/CMakeFiles/Lab_2.dir
+C:/Users/MSI/Desktop/Facultate An 3/Semestru 1/PPD/Lab 2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/MSI/Desktop/Facultate An 3/Semestru 1/PPD/Lab 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

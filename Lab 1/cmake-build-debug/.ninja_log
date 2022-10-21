@@ -1,0 +1,10 @@
+# ninja log v5
+3	802	6880061445390280	CMakeFiles/Lab_2.dir/main.cpp.obj	58c90ccc587a9666
+802	1172	6880061448974362	Lab_2.exe	7855c0701e50371e
+272	475	6878724866364340	CMakeFiles/Lab_2.dir/Start.cpp.obj	ffd8899454bc97e1
+81	608	6878724867670851	CMakeFiles/Lab_2.dir/Product.cpp.obj	670f0f54eebe1b14
+63	855	6880056287211936	CMakeFiles/Lab_2.dir/Inventory.cpp.obj	a93dce2b4399afeb
+124	765	6880056286322716	CMakeFiles/Lab_2.dir/InventoryChecker.cpp.obj	491fcb917f982fa4
+123	781	6880037742434807	CMakeFiles/Lab_2.dir/Sale.cpp.obj	45433fefacc56e07
+0	565	6880064532413268	build.ninja	6af37b3b858e28bb
+63	1034	6879935953574751	CMakeFiles/Lab_2.dir/m.cpp.obj	47f2c198a6a20ebb
