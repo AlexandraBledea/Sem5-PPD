@@ -4,8 +4,8 @@
 #include <vector>
 #include "Buffer.h"
 
-std::vector<int> vector1{1, 2, 3, 4, 5};
-std::vector<int> vector2{2, 2, 2, 2, 2};
+std::vector<int> vector1{1, 2, 3, 4, 5, 10, 20};
+std::vector<int> vector2{2, 2, 2, 2, 2, 10, 20};
 int sum = 0;
 
 void consumer(Buffer* buffer){

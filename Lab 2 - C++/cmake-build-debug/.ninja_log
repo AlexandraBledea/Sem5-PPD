@@ -1,22 +1,9 @@
 # ninja log v5
-5	719	6890298061870214	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	f7b53085f7fb00da
-0	733	6890298062029788	CMakeFiles/Lab2___C__.dir/main.cpp.obj	81aba1aa494d3177
-734	880	6890298063465944	Lab2___C__.exe	8c2cd79b0d7a0cca
-6	666	6890298275869207	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	f7b53085f7fb00da
-3	715	6890298276357899	CMakeFiles/Lab2___C__.dir/main.cpp.obj	81aba1aa494d3177
-715	827	6890298277444986	Lab2___C__.exe	8c2cd79b0d7a0cca
-2	570	6890298922022150	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	f7b53085f7fb00da
-570	671	6890298923029453	Lab2___C__.exe	8c2cd79b0d7a0cca
-3	530	6890299405603083	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	f7b53085f7fb00da
-530	629	6890299406565920	Lab2___C__.exe	8c2cd79b0d7a0cca
-5	524	6890300134224096	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	f7b53085f7fb00da
-2	562	6890300134613059	CMakeFiles/Lab2___C__.dir/main.cpp.obj	81aba1aa494d3177
-562	668	6890300135670616	Lab2___C__.exe	8c2cd79b0d7a0cca
-6	510	6890301207016471	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	f7b53085f7fb00da
-3	532	6890301207236003	CMakeFiles/Lab2___C__.dir/main.cpp.obj	81aba1aa494d3177
-532	642	6890301208312993	Lab2___C__.exe	8c2cd79b0d7a0cca
-2	529	6890301648663336	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	f7b53085f7fb00da
-529	640	6890301649750446	Lab2___C__.exe	8c2cd79b0d7a0cca
 5	558	6890302069934474	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	f7b53085f7fb00da
 2	625	6890302070612682	CMakeFiles/Lab2___C__.dir/main.cpp.obj	81aba1aa494d3177
 625	731	6890302071639919	Lab2___C__.exe	8c2cd79b0d7a0cca
+4	769	6890303216834038	CMakeFiles/Lab2___C__.dir/Buffer.cpp.obj	906ab59a86ccdf3
+9	792	6890303217073405	CMakeFiles/Lab2___C__.dir/main.cpp.obj	7f769f65cc362b11
+792	896	6890303218080706	Lab2___C__.exe	8c2cd79b0d7a0cca
+2	532	6890303322722623	CMakeFiles/Lab2___C__.dir/main.cpp.obj	7f769f65cc362b11
+533	638	6890303323759773	Lab2___C__.exe	8c2cd79b0d7a0cca
