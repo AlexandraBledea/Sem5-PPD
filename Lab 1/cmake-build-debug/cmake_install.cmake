@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/MSI/Desktop/Facultate An 3/Semestru 1/PPD/Lab 2
+# Install script for directory: C:/Users/night/Desktop/Facultate An 3/Semestru 1/PPD/Sem5-PPD/Lab 1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/Clion/CLion 2022.2.3/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/JetBrains/CLion 2022.2.4/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/MSI/Desktop/Facultate An 3/Semestru 1/PPD/Lab 2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/night/Desktop/Facultate An 3/Semestru 1/PPD/Sem5-PPD/Lab 1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,3 @@
+C:/Users/night/Desktop/Facultate An 3/Semestru 1/PPD/Sem5-PPD/Lab2 - C++/cmake-build-debug/CMakeFiles/Lab2___C__.dir
+C:/Users/night/Desktop/Facultate An 3/Semestru 1/PPD/Sem5-PPD/Lab2 - C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/night/Desktop/Facultate An 3/Semestru 1/PPD/Sem5-PPD/Lab2 - C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
