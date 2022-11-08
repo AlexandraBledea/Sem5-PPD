@@ -4,8 +4,8 @@
 #include <vector>
 #include "Buffer.h"
 
-std::vector<int> vector1{1, 2, 3, 4, 5, 10, 20};
-std::vector<int> vector2{2, 2, 2, 2, 2, 10, 20};
+std::vector<int> vector1;
+std::vector<int> vector2;
 int sum = 0;
 
 void consumer(Buffer* buffer){
@@ -30,6 +30,11 @@ void producer(Buffer* buffer){
 
 int main ()
 {
+    for(int i = 0; i < 100; i++){
+        vector1.push_back(1);
+        vector2.push_back(i+1);
+    }
+
     auto* buffer = new Buffer();
     std::thread Consumer(consumer, buffer);
     std::thread Producer(producer, buffer);

@@ -19,8 +19,6 @@ public class Buffer {
     public Buffer(){
 
     }
-
-
     public int get() throws InterruptedException{
 
         lock.lock();
