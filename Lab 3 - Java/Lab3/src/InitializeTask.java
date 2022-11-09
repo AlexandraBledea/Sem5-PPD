@@ -9,13 +9,18 @@ public class InitializeTask {
 
         int positionsToBeFilled = defaultNumberOfPositionsPerThread;
 
-        if(index < numberOfThreadsWithExtraPos){
-            positionsToBeFilled++;
-        }
+//        if(index < numberOfThreadsWithExtraPos){
+//            positionsToBeFilled++;
+//        }
+
 
         int startRow = positionsToBeFilled * index / result.getColumns();
         int startCol = positionsToBeFilled * index % result.getColumns();
 
+
+        if(index == threadsNumber - 1){
+            positionsToBeFilled += numberOfThreadsWithExtraPos;
+        }
 
         return new RowTask(startRow, startCol, positionsToBeFilled, matrix1, matrix2, result);
 
@@ -33,13 +38,17 @@ public class InitializeTask {
 
         int positionsToBeFilled = defaultNumberOfPositionsPerThread;
 
-        if(index < numberOfThreadsWithExtraPos){
-            positionsToBeFilled++;
-        }
+//        if(index < numberOfThreadsWithExtraPos){
+//            positionsToBeFilled++;
+//        }
 
         int startRow = positionsToBeFilled * index % result.getRows();
         int startCol = positionsToBeFilled * index / result.getRows();
 
+
+        if(index == threadsNumber - 1){
+            positionsToBeFilled += numberOfThreadsWithExtraPos;
+        }
 
         return new ColumnTask(startRow, startCol, positionsToBeFilled, matrix1, matrix2, result);
 
@@ -52,7 +61,7 @@ public class InitializeTask {
 
         int numberOfThreadsWithExtraPos = positions % threadsNumber;
 
-        if(index < numberOfThreadsWithExtraPos){
+        if(index < positions % threadsNumber){
             defaultNumberOfPositionsPerThread++;
         }
 

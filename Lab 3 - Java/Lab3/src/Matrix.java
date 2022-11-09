@@ -9,7 +9,7 @@ public class Matrix {
     private final int[][] matrix;
 
 
-    private final int MAX_INITIAL_VALUE = 2;
+    private final int MAX_INITIAL_VALUE = 1;
     private final int MIN_INITIAL_VALUE = 0;
 
     Matrix(int rows, int columns){
@@ -24,7 +24,7 @@ public class Matrix {
 
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < columns; j++){
-                this.matrix[i][j] = random.nextInt(MAX_INITIAL_VALUE - MIN_INITIAL_VALUE) + MAX_INITIAL_VALUE - 1;
+                this.matrix[i][j] = 1;
             }
         }
     }

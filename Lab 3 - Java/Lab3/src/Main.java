@@ -8,19 +8,19 @@ import java.util.concurrent.TimeUnit;
 public class Main {
 
 
-    private static final int rowMatrix1 = 3;
+    private static final int rowMatrix1 = 10;
 
-    private static final int rowMatrix2 = 3;
+    private static final int rowMatrix2 = 10;
 
-    private static final int colMatrix1 = 3;
+    private static final int colMatrix1 = 10;
 
-    private static final int colMatrix2 = 5;
+    private static final int colMatrix2 = 10;
 
     private static final int THREAD_COUNT = 3;
 
     private static final ThreadApproach THREAD_APPROACH = ThreadApproach.THREAD_POOL;
 
-    private static final TaskType TASK_TYPE = TaskType.COLUMNS;
+    private static final TaskType TASK_TYPE = TaskType.KTH;
 
 
     public static void main(String[] args) {
@@ -100,7 +100,7 @@ public class Main {
         executorService.shutdown();
 
         try{
-            if(!executorService.awaitTermination(1, TimeUnit.SECONDS)){
+            if(!executorService.awaitTermination(600, TimeUnit.SECONDS)){
                 executorService.shutdownNow();
             }
 

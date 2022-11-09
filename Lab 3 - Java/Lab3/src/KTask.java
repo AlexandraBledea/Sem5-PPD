@@ -23,7 +23,7 @@ public class KTask extends ThreadMatrix{
             countPositionsToFill--;
 
             currentRow = currentRow + (currentColumn + K) / noCols;
-            currentColumn = currentColumn + (currentColumn + K) % noCols;
+            currentColumn = (currentColumn + K) % noCols;
 
         }
     }
