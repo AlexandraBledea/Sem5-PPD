@@ -1,0 +1,8 @@
+C:\Users\night\Desktop\Facultate An 3\Semestru 1\PPD\Sem5-PPD\Lab 4 - C#\Lab 4\Lab 4\bin\Debug\Lab 4.exe.config
+C:\Users\night\Desktop\Facultate An 3\Semestru 1\PPD\Sem5-PPD\Lab 4 - C#\Lab 4\Lab 4\bin\Debug\Lab 4.exe
+C:\Users\night\Desktop\Facultate An 3\Semestru 1\PPD\Sem5-PPD\Lab 4 - C#\Lab 4\Lab 4\bin\Debug\Lab 4.pdb
+C:\Users\night\Desktop\Facultate An 3\Semestru 1\PPD\Sem5-PPD\Lab 4 - C#\Lab 4\Lab 4\obj\Debug\Lab 4.csproj.AssemblyReference.cache
+C:\Users\night\Desktop\Facultate An 3\Semestru 1\PPD\Sem5-PPD\Lab 4 - C#\Lab 4\Lab 4\obj\Debug\Lab 4.csproj.SuggestedBindingRedirects.cache
+C:\Users\night\Desktop\Facultate An 3\Semestru 1\PPD\Sem5-PPD\Lab 4 - C#\Lab 4\Lab 4\obj\Debug\Lab 4.csproj.CoreCompileInputs.cache
+C:\Users\night\Desktop\Facultate An 3\Semestru 1\PPD\Sem5-PPD\Lab 4 - C#\Lab 4\Lab 4\obj\Debug\Lab 4.exe
+C:\Users\night\Desktop\Facultate An 3\Semestru 1\PPD\Sem5-PPD\Lab 4 - C#\Lab 4\Lab 4\obj\Debug\Lab 4.pdb
