@@ -111,16 +111,6 @@ namespace Lab4.Implementation
             }
         }
 
-        //For task!
-        //private static Task Receive(StateObject state)
-        //{
-        //    return Task.Factory.StartNew(() =>
-        //    {
-        //        state.workSocket.BeginReceive(state.receiveBuffer, 0, StateObject.BUFFER_SIZE, 0,
-        //            ReceiveCallback, state);
-        //    });
-        //}
-
         private static void ReceiveCallback(IAsyncResult ar)
         {
             try

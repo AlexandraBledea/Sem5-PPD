@@ -35,7 +35,7 @@ namespace Lab_4.Implementation
             var id = (int)idObject;
             StartClient(HOSTS[id], id);
 
-            Thread.Sleep(2000);
+            //Thread.Sleep(2000);
         }
 
         private static async void StartClient(string host, int id)
