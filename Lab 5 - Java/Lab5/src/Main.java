@@ -1,14 +1,15 @@
 import Algorithms.ParallelClassic;
 import Algorithms.SequentialClassic;
+import Algorithms.SequentialKaratsuba;
 import Model.AlgorithmType;
 import Model.MethodType;
 import Model.Polynomial;
 
 public class Main {
 
-    private static final MethodType METHOD = MethodType.PARALLEL;
+    private static final MethodType METHOD = MethodType.SEQUENTIAL;
 
-    private static final AlgorithmType ALGORITHM = AlgorithmType.CLASSIC;
+    private static final AlgorithmType ALGORITHM = AlgorithmType.KARATSUBA;
     public static void main(String[] args) throws InterruptedException {
         Polynomial p1 = new Polynomial(3);
         System.out.println("Polynomial p1 = " + p1);
@@ -31,6 +32,9 @@ public class Main {
         if(METHOD.equals(MethodType.SEQUENTIAL)){
             if(ALGORITHM.equals(AlgorithmType.CLASSIC)){
                 result = SequentialClassic.multiply(polynomial1, polynomial2);
+            }
+            else if(ALGORITHM.equals(AlgorithmType.KARATSUBA)){
+                result = SequentialKaratsuba.multiply(polynomial1, polynomial2);
             }
         } else if (METHOD.equals(MethodType.PARALLEL)){
             if(ALGORITHM.equals(AlgorithmType.CLASSIC)){
