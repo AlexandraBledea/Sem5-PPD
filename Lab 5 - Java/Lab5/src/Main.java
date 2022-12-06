@@ -1,20 +1,23 @@
 import Algorithms.ParallelClassic;
+import Algorithms.ParallelKaratsuba;
 import Algorithms.SequentialClassic;
 import Algorithms.SequentialKaratsuba;
 import Model.AlgorithmType;
 import Model.MethodType;
 import Model.Polynomial;
 
+import java.util.concurrent.ExecutionException;
+
 public class Main {
 
     private static final MethodType METHOD = MethodType.SEQUENTIAL;
 
     private static final AlgorithmType ALGORITHM = AlgorithmType.KARATSUBA;
-    public static void main(String[] args) throws InterruptedException {
-        Polynomial p1 = new Polynomial(3);
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
+        Polynomial p1 = new Polynomial(8);
         System.out.println("Polynomial p1 = " + p1);
 
-        Polynomial p2 = new Polynomial(2);
+        Polynomial p2 = new Polynomial(7);
         System.out.println("Polynomial p2 = " + p2);
 
         long startTime = System.nanoTime();
@@ -27,7 +30,7 @@ public class Main {
         System.out.println("Elapsed running time: " + totalTime + " s");
     }
 
-    private static void run(Polynomial polynomial1, Polynomial polynomial2) throws InterruptedException {
+    private static void run(Polynomial polynomial1, Polynomial polynomial2) throws InterruptedException, ExecutionException {
         Polynomial result = null;
         if(METHOD.equals(MethodType.SEQUENTIAL)){
             if(ALGORITHM.equals(AlgorithmType.CLASSIC)){
@@ -39,6 +42,9 @@ public class Main {
         } else if (METHOD.equals(MethodType.PARALLEL)){
             if(ALGORITHM.equals(AlgorithmType.CLASSIC)){
                 result = ParallelClassic.multiply(polynomial1, polynomial2);
+            }
+            else if(ALGORITHM.equals(AlgorithmType.KARATSUBA)){
+                result = ParallelKaratsuba.multiply(polynomial1, polynomial2, 1);
             }
         }
 
