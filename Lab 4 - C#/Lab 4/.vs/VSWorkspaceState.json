@@ -3,8 +3,9 @@
     "",
     "\\Lab 4",
     "\\Lab 4\\Implementation",
+    "\\Lab 4\\Model",
     "\\Lab 4\\Utils"
   ],
-  "SelectedNode": "\\Lab 4\\Program.cs",
+  "SelectedNode": "\\Lab 4\\Implementation\\DirectCallBack.cs",
   "PreviewInSolutionExplorer": false
 }
