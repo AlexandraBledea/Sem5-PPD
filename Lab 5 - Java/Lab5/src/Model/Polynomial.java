@@ -24,9 +24,9 @@ public class Polynomial {
         coefficients = new ArrayList<>();
         Random r = new Random();
         for(int i = 0; i < degree; i++){
-            coefficients.add(r.nextInt(10));
+            coefficients.add(1);
         }
-        coefficients.add(r.nextInt(10) + 1);
+        coefficients.add(1);
     }
 
     public List<Integer> getCoefficients(){

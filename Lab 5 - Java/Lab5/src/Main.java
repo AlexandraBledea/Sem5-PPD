@@ -10,14 +10,14 @@ import java.util.concurrent.ExecutionException;
 
 public class Main {
 
-    private static final MethodType METHOD = MethodType.SEQUENTIAL;
+    private static final MethodType METHOD = MethodType.PARALLEL;
 
     private static final AlgorithmType ALGORITHM = AlgorithmType.KARATSUBA;
     public static void main(String[] args) throws InterruptedException, ExecutionException {
-        Polynomial p1 = new Polynomial(8);
+        Polynomial p1 = new Polynomial(100);
         System.out.println("Polynomial p1 = " + p1);
 
-        Polynomial p2 = new Polynomial(7);
+        Polynomial p2 = new Polynomial(100);
         System.out.println("Polynomial p2 = " + p2);
 
         long startTime = System.nanoTime();
