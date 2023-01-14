@@ -33,7 +33,7 @@ public class Subscriber implements Runnable{
             }
             else if(message instanceof UpdateMessage){
                 UpdateMessage updateMessage = (UpdateMessage) message;
-                System.out.println("Update message in " + MPI.COMM_WORLD.Rank() + ": " + updateMessage.value + "->" + updateMessage.value);
+                System.out.println("Update message in " + MPI.COMM_WORLD.Rank() + ": " + updateMessage.variable + "->" + updateMessage.value);
                 this.dsm.setVariable(updateMessage.variable, updateMessage.value);
             }
         }

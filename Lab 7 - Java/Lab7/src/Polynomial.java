@@ -26,7 +26,8 @@ public class Polynomial implements Serializable {
     public void generateCoefficients(){
         Random random = new Random();
         for(int i = 0; i < this.coefficients.size(); i++){
-            this.coefficients.set(i, random.nextInt(10) + 1);
+//            this.coefficients.set(i, random.nextInt(10) + 1);
+            this.coefficients.set(i, 1);
         }
     }
 

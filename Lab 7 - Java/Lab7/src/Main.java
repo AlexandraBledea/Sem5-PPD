@@ -1,8 +1,8 @@
 import mpi.MPI;
 
 public class Main {
-    static final int POLYNOMIAL_SIZE_P1 = 5;
-    static final int POLYNOMIAL_SIZE_P2 = 5;
+    static final int POLYNOMIAL_SIZE_P1 = 101;
+    static final int POLYNOMIAL_SIZE_P2 = 101;
     static final String IMPLEMENTATION = "karatsuba";
 
     public static void master(Polynomial p1, Polynomial p2, int processes){

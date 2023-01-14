@@ -33,21 +33,21 @@ public class DSM {
     }
 
     public void setVariable(String variable, int value){
+        lock.lock();
         this.variables.put(variable, value);
+        lock.unlock();
     }
 
     public void updateVariable(String variable, int value){
-        lock.lock();
         this.setVariable(variable, value);
         this.sendMessageToSubscribers(variable, new UpdateMessage(variable, value));
-        lock.unlock();
     }
 
     public void checkAndReplace(String variable, int oldValue, int newValue){
         lock.lock();
         if(this.variables.get(variable).equals(oldValue)){
-            lock.unlock();
             this.updateVariable(variable, newValue);
+            lock.unlock();
         } else {
             lock.unlock();
         }
@@ -70,8 +70,10 @@ public class DSM {
     }
 
     public void sendMessageToSubscribers(String variable, BaseMessage message){
+//        this.subscribers.get(variable).forEach(subscriberRank -> MPI.COMM_WORLD.Send(new Object[]{message}, 0, 1, MPI.OBJECT, subscriberRank, 0));
+
         for(int i = 0; i < MPI.COMM_WORLD.Size(); i++){
-            if(MPI.COMM_WORLD.Rank() == i && !subscribers.get(variable).contains(i))
+            if(MPI.COMM_WORLD.Rank() == i || !subscribers.get(variable).contains(i))
                 continue;
 
             MPI.COMM_WORLD.Send(new Object[]{message}, 0, 1, MPI.OBJECT, i, 0);
@@ -79,6 +81,7 @@ public class DSM {
     }
 
     public void sendMessageToAll(BaseMessage message){
+
         for(int i = 0; i < MPI.COMM_WORLD.Size(); i++){
             if(MPI.COMM_WORLD.Rank() == i && !(message instanceof CloseMessage))
                 continue;
